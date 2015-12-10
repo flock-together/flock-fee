@@ -94,11 +94,27 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+$sky: #0384FC;
+$cloud: #e7e7e7;
+body {
+  background-color: $sky;
+  color: $cloud;
+  font-family: 'Ubuntu', sans-serif;
+  main.container {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 100%;
+  } //main.container
+}
 
 //bower:css
 @import "../../bower_components/normalize-css/normalize.css";
 //endbower
+@import "layout";
+
+
+
+
 
 
 
