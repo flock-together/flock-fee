@@ -1,0 +1,25 @@
+{
+  "name": "flock-fee",
+  "description": "Churches can connect with other churches more easily so that the burden of ministry is lighter and community is greater.",
+  "main": "index.js",
+  "authors": [
+    "Shay Hall <hallshay@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/flock-together/flock-fee",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "normalize.css#~3.0.3",
+    "modernizr": "~3.2.0",
+    "jquery": "~2.1.4",
+    "angular": "~1.4.8",
+    "angular-route": "~1.4.8"
+  }
+}
