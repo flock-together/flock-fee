@@ -1,0 +1,30 @@
+{
+  "name": "flock-fee",
+  "version": "0.0.0",
+  "description": "### Phase 1) Internal to Internal: _Churches can connect with other churches more easily so that the burden of ministry is lighter and community is greater._ - Small Groups - Special Worship Services - Children/Youth Ministry - Speakers/Events/Fellowship Meals - Fundraisers - Missional Activities - Needed Resources",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "browser-sync start --server --files='src/*.html, src/css/main.css, src/js/*.js' --startPath src/index.html",
+    "start:dist": "browser-sync start --server --startPath dist/index.html",
+    "sass": "node-sass src/scss/main.scss src/css/main.css",
+    "sass:watch": "node-sass src/scss/main.scss src/css/main.css --watch src/scss/*.scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flock-together/flock-fee.git"
+  },
+  "author": "Shay Hall <hallshay@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flock-together/flock-fee/issues"
+  },
+  "homepage": "https://github.com/flock-together/flock-fee#readme",
+  "dependencies": {
+    "bower": "^1.7.0",
+    "browser-sync": "^2.10.0",
+    "gulp": "^3.9.0",
+    "node-sass": "^3.4.2",
+    "wiredep": "^2.2.2"
+  }
+}
