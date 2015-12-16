@@ -2,15 +2,65 @@
 <div id="fb-root"></div>
 
  <h1>Flock</h1>
-<!-- <div
+
+<section class="signup-form-admin">
+  <form ng-submit="adminSignup()">
+    <legend>Admin Signup</legend>
+    <input type="text" placeholder="first name" ng-model="name_first" required></input>
+    <input type="text" placeholder="last name" required></input>
+    <input type="email" placeholder="email" required></input>
+    <input type="tel" placeholder="phone number" required></input>
+    <input type="password" placeholder="password" min="5"
+ required></input>
+    <input type="password" placeholder="confirm password" min="5" required></input>
+    <input type="text" placeholder="Host Church" required></input>
+    <input type="email" placeholder="Church email" required></input>
+    <input type="tel" placeholder="Church phone" required></input>
+    <input type="url" placeholder="Church website"></input>
+    <button class="button">Submit</button>
+  </form>
+</section><!--END .signup-form-admin-->
+
+<section class="signup-form-participant">
+  <form ng-submit="participantSignup()">
+    <legend>Particpant Signup</legend>
+    <input type="text" placeholder="first name" required></input>
+    <input type="text" placeholder="last name" required></input>
+    <input type="email" placeholder="email" required></input>
+    <input type="tel" placeholder="phone number"></input>
+    <input type="password" placeholder="password" min="5" required></input>
+    <input type="password" placeholder="confirm password" min="5" required></input>
+    <input type="text" placeholder="Church Affiliation" ></input>
+    <button class="button">Submit</button>
+  </form>
+</section><!--END .signup-form-participant-->
+
+
+<!-- <div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="true"></div> -->
+<!-- <a href="">Sign-in with twitter</a>
+<a href="">Sign-in with email</a> -->
+<!-- <a href="//www.iubenda.com/privacy-policy/7761258" class="iubenda-white iubenda-embed" title="Privacy Policy">Privacy Policy</a> -->
+<div
   class="fb-like"
   data-share="true"
   data-width="450"
   data-show-faces="true">
-</div> -->
-
-<div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="true"></div>
-<!-- <a href="">Sign-in with twitter</a>
-<a href="">Sign-in with email</a> -->
-<a href="//www.iubenda.com/privacy-policy/7761258" class="iubenda-white iubenda-embed" title="Privacy Policy">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "//cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+</div>
+<!-- <script type="text/javascript">
+      (function(w,d) {
+        var loader = function() {
+          var s = d.createElement("script"),
+            tag = d.getElementsByTagName("script")[0];
+          s.src = "//cdn.iubenda.com/iubenda.js";
+          tag.parentNode.insertBefore(s,tag);
+        };
+        if(w.addEventListener){w.addEventListener("load", loader, false);
+        } else if(w.attachEvent) {
+          w.attachEvent("onload", loader);
+        } else {
+          w.onload = loader;
+        }
+      })(window, document)
+ </script> -->
+<!--Privacy Policy-->
 </section>

@@ -37,7 +37,8 @@ cp bower_components/modernizr/modernizr.js dist/bower_components/modernizr/moder
 
 echo 'Step 5: Copy img folder'
 cp  -r src/img/ dist/img/
-cp  -r src/favicon.ico dist/favicon.ico
+cp  -r favicon.ico dist/favicon.ico
+cp -r favicon.png dist/favicon.png
 
 echo 'Step 6: verify working project in dist/'
 npm run start:dist
