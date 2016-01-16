@@ -6,8 +6,8 @@
         <title>Flock</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="favicon" href="favicon.png">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="favicon" href="/favicon.png">
         <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
         <!-- Place favicon.ico in the root directory -->
         <!-- bower:css -->
@@ -17,23 +17,23 @@
     </head>
     <body ng-app="flockTogether" ng-controller="MainController">
       <header class="header">
-        <h1>Flock</h1>
-        <!-- <nav>
+        <h1><a href="#/">Flock</a></h1>
+        <nav>
           <ul>
-            <li>Signin</li>
-            <li>Add Event</li>
-            <li>Edit Event</li>
-            <li>Find Event
-                <ul>
+            <li><a href="">Find Event</a>
+                <!-- <ul>
                   <li>Categories</li>
                   <li>Calendar</li>
                   <li>Map</li>
-                </ul>
+                </ul> -->
+            <li><a href="#/create-event">Add Event</a></li>
+            <!-- <li>Edit Event</li> -->
+            <li><a href="#/login">Sign In</a></li>
             </li>
           </ul>
-        </nav> -->
+        </nav>
       </header>
-      <main class="container">
+      <main class="container-fluid">
         <ng-view />
       </main><!--end .container-->
         <!-- bower:js -->
@@ -41,8 +41,12 @@
         <script src="../bower_components/angular/angular.js"></script>
         <script src="../bower_components/angular-route/angular-route.js"></script>
         <!-- endbower -->
+        <script src="js/bootstrap.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/login.js"></script>
+        <script src="js/home.js"></script>
+        <script src="js/create_event.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
