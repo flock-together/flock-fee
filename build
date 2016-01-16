@@ -11,6 +11,9 @@ echo 'Step 2: Build all the Sass into CSS!'
 mkdir dist/css
 npm run sass
 cp src/css/main.css dist/css/main.css
+cp src/css/bootstrap.min.css dist/css/bootstrap.min.css
+
+
 
 echo 'Step 3: Copy all the JS'
 mkdir -p dist/js
