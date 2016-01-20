@@ -1,4 +1,4 @@
-<section ng-controller="homeCtrl">
+<section>
   <section class="event-list" ng-repeat="event in events">
     <div>
       <h2><i ng-click="showMore()" class="fa fa-caret-down show-more"></i><i ng-click="showLess()" class="fa fa-caret-up event-details hidden"></i>
@@ -24,7 +24,7 @@
           <h5>Contact Info</h5>
           <p><span><a href="mailto:{{event.email}}">{{event.contact_person}}</a> </span>&nbsp &nbsp<span><a href:href="tel:{{event.phone_number}}"> {{event.phone_number}}</a></span></p>
         </div><!--END Contact Info-->
-        <a href="#/join" class="btn btn-default btn-sm" role="button">FLOCK WITH US</a>
+        <a href="#/join/{{event.event_id}}" class="btn btn-default btn-sm" role="button">FLOCK WITH US</a>
       </div><!--END Event details-->
   </section>
 </section>

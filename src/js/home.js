@@ -5,8 +5,6 @@
 
     .controller('homeCtrl', function($scope, $http) {
 
-    $scope.event = {};
-
     $http.get('api/event.json')
       .then(function(response){
         $scope.events = response.data;
