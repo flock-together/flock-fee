@@ -13,6 +13,10 @@
         templateUrl: 'partials/create_event.html',
         controller: 'createEventCtrl'
       })
+      .when('/join/:id', {
+        templateUrl: 'partials/join.html',
+        controller: 'joinEventCtrl'
+      })
   })//END angular.module 'flock'
     .controller('MainController', function($http, $scope){
 
