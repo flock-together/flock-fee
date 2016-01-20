@@ -14,7 +14,7 @@
          <p><span>{{event.start_date}}</span> at <span>{{event.start_time}}</span></p>
          <p>Until <span ng-show="true">{{event.end_date}}</span><span ng-hide="{{event_end-date}}">{{event.start_date}}</span>  at <span ng-show="true">{{event.end_time}}</span></p>
         <h5>Where</h5>
-        <span>{{event.location}}</span>
+        <span><a target="_blank" href="https://www.google.com/maps/place/{{event.location}}">{{event.location}}</a></span>
         </div>
         <div>
           <h5>Cost</h5>
