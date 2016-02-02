@@ -11,9 +11,10 @@
     "end_time": "1:00 pm",
     "location": "Duke Memorial UMC",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "event_type": ["fellowship meal", "small group", "fundraiser"],
+    "event_type": ["fellowship meal", "small group"],
     "suggested": false,
-    "cost": ""
+    "cost": "",
+    "attending": ["Shay", "Cathy", "Ayden", "Ellie"]
   },
   {
     "event_name": "Another Sample Event!",
@@ -30,7 +31,8 @@
     "description": "a commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "event_type": ["fellowship meal", "small group"],
     "suggested": true,
-    "cost": "5.00"
+    "cost": "5.00",
+    "attending": ["Shay", "Cathy", "Ayden", "Ellie"]
   },
   {
     "event_name": "Yet Another Event!",
@@ -47,7 +49,8 @@
     "description": "a commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "event_type": ["fellowship meal", "small group"],
     "suggested": false,
-    "cost": "5.00"
+    "cost": "5.00",
+    "attending": ["Shay", "Cathy", "Ayden", "Ellie"]
   },
   {
     "event_name": "4th Event",
@@ -64,7 +67,8 @@
     "description": "a commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "event_type": ["fellowship meal", "small group"],
     "suggested": false,
-    "cost": "5.00"
+    "cost": "5.00",
+    "attending": ["Shay", "Cathy", "Ayden", "Ellie"]
     },
   {
     "event_name": "Event 5!",
@@ -81,7 +85,8 @@
     "description": "a commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "event_type": ["fellowship meal", "small group"],
     "suggested": false,
-    "cost": "5.00"
+    "cost": "5.00",
+    "attending": ["Shay", "Cathy", "Ayden", "Ellie"]
   },
   {
     "event_name": "Event six!",
@@ -98,7 +103,8 @@
     "description": "a commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "event_type": ["fellowship meal", "small group"],
     "suggested": false,
-    "cost": "5.00"
+    "cost": "5.00",
+    "attending": ["Shay", "Cathy", "Ayden", "Ellie"]
   },
   {
     "event_name": "Seventh Event!",
@@ -115,6 +121,7 @@
     "description": "a commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "event_type": ["fellowship meal", "small group"],
     "suggested": false,
-    "cost": "5.00"
+    "cost": "5.00",
+    "attending": ["Shay", "Cathy", "Ayden", "Ellie"]
   }
 ]
