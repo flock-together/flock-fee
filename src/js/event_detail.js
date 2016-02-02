@@ -7,7 +7,6 @@
       $http.get("api/event.json")
       .then(function(response){
         $scope.thisEvent = response.data[id];
-        console.log($scope.thisEvent);
         $scope.directions = $scope.thisEvent.location.split(" ").join("+");
       })//END get event.json
     })//END eventDetail controller
