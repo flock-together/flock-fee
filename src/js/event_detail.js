@@ -9,5 +9,9 @@
         $scope.thisEvent = response.data[id];
         $scope.directions = $scope.thisEvent.location.split(" ").join("+");
       })//END get event.json
+
+      $scope.joinEvent=function(){
+        console.log("Add code to put user to attending list"); 
+      }
     })//END eventDetail controller
 })();
