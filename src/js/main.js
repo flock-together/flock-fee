@@ -13,13 +13,16 @@
         templateUrl: 'partials/create_event.html',
         controller: 'createEventCtrl'
       })
-      .when('/join/:id', {
-        templateUrl: 'partials/join.html',
-        controller: 'joinEventCtrl'
+      .when('/event-detail/:id', {
+        templateUrl: 'partials/event_detail.html',
+        controller: 'detailCtrl'
       })
   })//END angular.module 'flock'
     .controller('MainController', function($http, $scope){
-
+      $http.get('api/event.json')
+        .then(function(response){
+          $scope.events = response.data;
+        })//END get event.json
     })//END MainController
 
 
