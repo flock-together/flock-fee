@@ -1,8 +1,7 @@
 <section>
   <section class="event-list" ng-repeat="event in events">
     <div>
-      <h2><i ng-click="showMore()" class="fa fa-caret-down show-more"></i><i ng-click="showLess()" class="fa fa-caret-up event-details hidden"></i>
- {{event.event_name}}</h2>
+      <a href="#/event-detail/{{event.event_id}}"><h2>{{event.event_name}}</h2></a>
       <h5></h5>
       <p><b>Event Type</b> <span ng-repeat="event_type in event.event_type"> - {{event_type}} - &nbsp</span></p>
     </div>
