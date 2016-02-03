@@ -3,7 +3,7 @@
 
   angular.module('flockTogether')
 
-    .controller('homeCtrl', function($scope, $http) {
+    .controller('publicListCtrl', function($scope, $http) {
 
     $http.get(BASE_URL)
       .then(function(response){
