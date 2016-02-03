@@ -13,8 +13,6 @@ npm run sass
 cp src/css/main.css dist/css/main.css
 cp src/css/bootstrap.min.css dist/css/bootstrap.min.css
 
-
-
 echo 'Step 3: Copy all the JS'
 mkdir -p dist/js
 cp -r src/js dist/
@@ -43,5 +41,9 @@ cp  -r src/img/ dist/img/
 cp  -r favicon.ico dist/favicon.ico
 cp -r favicon.png dist/favicon.png
 
-echo 'Step 6: verify working project in dist/'
+echo 'Step 6: add dummy json'
+mkdir -p dist/api/
+cp src/api/event.json dist/api/event.json
+
+echo 'Step 7: verify working project in dist/'
 npm run start:dist

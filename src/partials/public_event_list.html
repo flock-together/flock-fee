@@ -1,0 +1,10 @@
+<section class="event-list-container">
+  <h1>Public Event List</h1>
+  <section class="event-list">
+    <div class="event-overview"  ng-repeat="event in events | limitTo: 16">
+      <a href="#/event-detail/{{event.event_id}}"><h2>{{event.event_name}}</h2>
+      <h5></h5>
+      <p><b>Event Type</b> <span ng-repeat="event_type in event.event_type"> - {{event_type}}</span></p></a>
+    </div>
+  </section>
+</section>

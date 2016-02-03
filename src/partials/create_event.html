@@ -1,6 +1,6 @@
 <section class="col-md-offset-4 col-md-4" ng-controller="createEventCtrl">
   <form ng-submit="createEvent()">
-    <legend>Create Event</legend>
+    <h2>Create Event</h2>
     <div class="form-group">
       <input class="form-control" type="text" placeholder="Event Name" ng-model="event_name"></input><!--required-->
       <input class="form-control" type="text" placeholder="Host Church"></input><!--required-->
@@ -43,7 +43,14 @@
           <input type="checkbox" ng-model="resource"> Needed Resources
         </label>
       </div>
-      <input class="form-control" type="number" placeholder="Cost"></input>
+      <label> Cost</label>
+      <input class="form-control" type="number" placeholder="$0.00" ng-model="cost"></input>
+      <div class="radio">
+        <label>
+          <input type="checkbox" value="" ng-model="suggested">
+          Suggested Donation?
+        </label>
+      </div>
     </div>
     <button class="btn btn-default" ng-submit="createEvent()">Submit</button>
   </form>

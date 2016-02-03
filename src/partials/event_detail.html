@@ -1,0 +1,33 @@
+<section>
+  <h2> {{thisEvent.event_name}} <a href ng-click="joinEvent()">Join Event</button></a></h2>
+<div class="col-xs-12">
+  <span>{{thisEvent.start_date}}<span ng-show="event.end_date!==event.start_date">-{{thisEvent.end_date}}</span></span>
+  from
+  <span>{{thisEvent.start_time}}</span>
+  <span> - {{thisEvent.end_time}}</span>
+<br/>
+  <span> <a target="_blank" href="https://www.google.com/maps/place/{{directions}}">{{thisEvent.location}}</a> &nbsp; &nbsp;  <a target="_blank" href="https://www.google.com/maps/place/{{directions}}">View Map</a></span>
+  <p>{{thisEvent.description}}</p>
+</div>
+<div class="col-md-4 col-sm-12">
+  <h2>Details</h2>
+  <h4> Hosted by {{thisEvent.host_church}}</h4>
+  <h4>Event Type</h4>
+  <span ng-repeat="event_type in thisEvent.event_type">{{event_type}}<br/></span>
+<h4>Cost</h4>
+  <span>{{thisEvent.cost | currency}} <span ng-show="thisEvent.suggested"> (Suggested Donation)</span></span>
+  <h4>Contact Person</h4>
+
+  <span><a href="mailto:{{thisEvent.email}}"><i class="fa fa-envelope"></i> <span> {{thisEvent.contact_person}}</span></a></span>
+<br/>
+  <span><a href="tel:{{thisEvent.phone_number}}"><i class="fa fa-phone"></i>  {{thisEvent.phone_number}}</a></span>
+</div>
+<div class="col-md-4 col-sm-6">
+  <h4>RSVP List</h4>
+  <span ng-repeat="attending in thisEvent.attending">{{attending}}<br/></span>
+</div>
+<div  class="col-md-4 col-sm-6">
+  <h4>Similar Events</h4>
+  <h6 ng-repeat="event in events | limitTo:8" ng-if="event.event_id!=thisEvent.event_id"><a href="#/event-detail/{{event.event_id}}">{{event.event_name}}</a></h6>
+</div>
+</section>
