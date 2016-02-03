@@ -1,12 +1,45 @@
-body {
+.event-list-container {
+  h1 {
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 2.5em;
+    width: 100%*(1/3);
+    margin-left: 100%*(1/3);
+    padding: 1ex 1em;
+    background-color: darken($sky, 5%);
+    color: darken($cloud, 10%);
+    box-shadow: 1px 1px 20px rgba(0,0,0,.3);
+  }
   .event-list {
-    width: 70%;
-    margin-left: 15%;
-    margin-bottom: 5ex;
-    margin-top: 5ex;
-    border: 1px solid $cloud;
-    padding: 1ex 2em;
-}
-
-
+    display: flex;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-bottom: 15ex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    .event-overview {
+      width: 100%*(1/4);
+      margin: 1ex 1em;
+      padding: 1ex 1em;
+      background-color: darken($sky, 2.5%);
+      color: darken($cloud, 5%);
+      box-shadow: 1px 1px 20px rgba(0,0,0,.3);
+      &:hover {
+        background-color: darken($sky, 5%);
+        color: darken($cloud, 10%);
+        box-shadow: 3px 3px 20px rgba(0,0,0,.4);
+        a[href]{
+          color: darken($cloud, 10%);
+        }
+      }
+      h2, p {
+        text-align: center;
+      }
+      a[href] {
+        text-decoration: none;
+        color: $cloud;
+      }
+    }
+  }
 }
