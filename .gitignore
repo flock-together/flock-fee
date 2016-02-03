@@ -3,4 +3,4 @@ bower_components
 src/css/*.css
 dist/
 npm-debug.log*
-src specs/*.png
+src/specs/*.png
