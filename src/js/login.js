@@ -2,10 +2,23 @@
   angular.module('flockTogether')
 
     .controller('loginCtrl', function($scope, $http){
+      var BASE_URL = "https://sheltered-reef-84965.herokuapp.com/users/";
+
+      $scope.login = { };
+      $scope.loginUser = function() {
+        $http.post('BASE_URL', $scope.login)
+          .success(function(response) {
+            console.log($scope.response.data);
+            $scope.login = { };
+          })
+          .error(function (response) {
+            console.log("fail" + response);
+          });
+      }//loginUser form
 
       $scope.admin = { };
       $scope.adminSignup = function() {
-        $http.post('https://SITE-NAME-API.herokuapp.com/api/admin/', $scope.admin)
+        $http.post('BASE_URL', $scope.admin)
           .success(function(response) {
             console.log($scope.response.data);
             $scope.admin = { };
@@ -17,7 +30,7 @@
 
       $scope.participants = { };
       $scope.participantSignup = function() {
-        $http.post('https://SITE-NAME-API.herokuapp.com/api/participant/', $scope.participants)
+        $http.post('BASE_URL', $scope.participants)
           .success(function(response) {
             console.log($scope.name_first);
           })
