@@ -1,6 +1,23 @@
-body {
-  padding-top: 15ex;
+.login-page {
+    margin: 10ex 0;
   h1 {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    text-align: center;
+    font-size: 3.5em;
+    width: 50%;
+    margin-left: 25%;
+    padding: 1ex 0 0;
     color: $cloud;
+    border: 2px solid $cloud;
+    border-bottom: none;
+    border-right: none;
   }
-}//body
+  form {
+    margin-bottom: 1ex;
+    padding: 1ex 1em;
+    border-top: 2px solid $cloud;
+    border-left: 2px solid $cloud;
+}
+}//.login-page

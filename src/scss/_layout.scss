@@ -6,6 +6,7 @@ body {
     top: 0;
     padding: 0 5%;
     background-color: $sky;
+    border-bottom: 2px solid $cloud;
     color: $cloud;
     z-index: 99;
     a[href] {
@@ -31,7 +32,11 @@ body {
           display: block;
           float: right;
           font-size: 1.5em;
-          padding: 1.5ex 1em;
+          padding: 1ex 1em;
+          margin-bottom: 0.5ex;
+          margin-right: 0.5em;
+          border-top: 2px solid $cloud;
+          border-left: 2px solid $cloud;
         }//li
       }//ul
     }//nav
