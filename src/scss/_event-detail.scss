@@ -1,0 +1,71 @@
+.event-detail {
+  .event-detail-container {
+    width: 90%;
+    margin: 10ex 5%;
+}
+h1 {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  text-align: center;
+  font-size: 3.5em;
+  width: 50%;
+  margin-left: 25%;
+  padding: 1ex 0 0;
+  color: $cloud;
+  border-top: 2px solid $cloud;
+  border-left: 2px solid $cloud;  
+}
+h3,h4 {
+  color: darken($cloud, 10%)
+  }
+  div {
+    box-sizing: border-box;
+    float: left;
+    padding: 1.5ex 1em;
+    background-color: sky;
+    color: $cloud;
+    border: 2px solid $cloud;
+    border-bottom: none;
+    border-right: none;
+  }
+  .event-description {
+    margin-top: 1ex;
+    padding: 1ex 1em;
+    width: 75%;
+    text-align: justify;
+    border: 2px solid $cloud;
+    border-bottom: none;
+    border-right: none;
+    }
+  a[href].join-btn {
+    font-size: 1.2em;
+    position: fixed;
+    z-index: 99;
+    left: 80%;
+    display: block;
+    float: right;
+    width: 100%*(1/10);
+    padding: 1ex 1em;
+    margin: 1ex 1em;
+    color: $cloud;
+    text-align: center;
+    border: 2px solid $cloud;
+    border-bottom: none;
+    border-right: none;
+    &:hover {
+      color: darken($cloud, 10%);
+      border-bottom: 1px solid $cloud;
+      border-right: 1px solid $cloud;
+      border-left: none;
+      border-top: none;
+    }
+  }
+  a[href] {
+    text-decoration: none;
+    color: $cloud;
+    &:hover {
+      color: darken($cloud, 10%);
+    }
+  }
+}
