@@ -2,8 +2,8 @@
   angular.module('flockTogether', ['ngRoute'], function($routeProvider, $httpProvider) {
       $routeProvider
       .when('/', {
-        templateUrl: 'partials/public_event_list.html',
-        controller: 'publicListCtrl'
+        templateUrl: 'partials/event_list.html',
+        controller: 'eventListCtrl'
       })//END .when '/home'
       .when('/login', {
         templateUrl: 'partials/login.html',
