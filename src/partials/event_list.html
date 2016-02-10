@@ -1,0 +1,12 @@
+<section class="event-list-container">
+  <h1>Event List</h1>
+  <ul class="event-list">
+    <li class="event-item" ng-repeat="event in events | orderBy:'start_date'">
+      <a href="#/event-detail/{{event.event_id}}">
+        <h3>{{event.start_date}}<span ng-hide="event.end_date === event.start_date"> __ {{event.end_date}}</span></h3>
+        <h2>{{event.event_name}}</h2>
+        <p><b>Event Type</b> <span ng-repeat="event_type in event.event_type"> - {{event_type}}</span></p>
+      </a>
+    </li>
+  </ul>
+</section>
