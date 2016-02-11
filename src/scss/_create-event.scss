@@ -1,7 +1,7 @@
 .create-event-container {
   h2 {
     line-height: normal;
-    margin-bottom: 2ex;
+    margin-bottom: 1.5ex;
   }
   form > a[href] {
     box-sizing: border-box;
@@ -18,5 +18,21 @@
     background-color: #fff;
     text-decoration: none;
     text-align: center;
+  }
+  div.checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+    label {
+    width: 50%;
+    line-height: normal;
+    margin-top: 0;
+    }
+  }
+  .form-group {
+    label {
+      line-height: 0;
+      margin-top: 0.5;
+    }
   }
 }
