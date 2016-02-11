@@ -1,0 +1,39 @@
+.login-page {
+  .form {
+    display: none;
+    &.active {
+      display: block;
+      margin-top: 3ex;
+      input {
+        margin-top: 1ex;
+      }
+      a {
+        box-sizing: border-box;
+        width: 100%;
+
+        float: left;
+        color:#000;
+        font-size: 1.5em;
+        text-decoration: none;
+        text-align: center;
+      }
+      form > a {
+        box-sizing: border-box;
+        width: 100% * (1/3);
+        margin: 3ex 0;
+        padding: 0 1em;
+        padding-top: 1ex;
+        padding-bottom: 1ex;
+        float: left;
+        font-size: 1em;
+        color:#000;
+        border: 2.3px solid #000;
+        border-radius: 0;
+        background-color: #fff;
+        text-decoration: none;
+        text-align: center;
+
+      }
+    }
+  }
+}//.login-page
