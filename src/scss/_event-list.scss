@@ -2,32 +2,31 @@
   box-sizing: border-box;
   display: block;
   float: left;
-  width: 100%*(1/2);
+  width: 100%;
   ul {
-    width: 150%;
+    width: 100%;
     padding-left: 0;
     .event-item {
       box-sizing: border-box;
-      width: 150%;
+      width: 100%;
       float: left;
       list-style: none;
       border-bottom: 2px solid black;
-      padding: 2ex 0 2ex 10%;
+      padding: 2ex 0 2ex 5%;
        &.event-item-heading {
           position: fixed;
           top: 12ex;
           background: $sky;
-          padding-left: 8%;
         .event-item-heading-date {
           box-sizing: border-box;
           display: block;
-          width: 100%*(1/9);
+          width: 100%*(1/4);
           float: left;
         }
         .event-item-heading-list {
           box-sizing: border-box;
           display: block;
-          width: 100%*(1/2);
+          width: 100%*(1/4);
           float: left;
           text-align: left;
         }
@@ -44,7 +43,7 @@
           &-date {
             box-sizing: border-box;
             display: block;
-            width: 100%*(1/6);
+            width: 100%*(1/4);
             float: left;
           }
           &-name {

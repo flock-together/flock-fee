@@ -2,7 +2,7 @@ header.header {
   width: 100%;
   position: fixed;
   top: 0;
-  padding: 1ex 7%;
+  padding: 1ex 5%;
   background-color: $cloud;
   border-bottom: 2px solid #000;
   z-index: 99;
@@ -28,8 +28,9 @@ header.header {
         display: block;
         float: right;
         font-size: 1.5em;
-        padding: 1ex 1em;
+        padding: 1ex 0 1ex 1em;
         margin: 1ex 1em;
+        text-align: right;
       }//li
     }//ul
   }//nav
