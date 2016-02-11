@@ -26,9 +26,30 @@
           </ul>
         </nav>
       </header>
-      <main class="container-fluid">
-        <ng-view />
+      <main>
+        <section class="event-list-container">
+          <ul>
+            <li class="event-item event-item-heading">
+              <h2 class="event-item-heading-date">Date</h2>
+              <h2 class="event-item-heading-list">Event List</h2>
+            </li>
+            <li class="event-item" id="event-item-{{event.event_id}}" ng-repeat="event in events | orderBy:'start_date'">
+              <a href="#/event-detail/{{event.event_id}}" ng-click="showDetails()">
+                <div class="event-item-date">
+                  <h3>{{event.start_date}}<span ng-hide="event.end_date === event.start_date"> __ {{event.end_date}}</span></h3>
+                </div>
+                <div class="event-item-name">
+                  <h3>{{event.event_name}}</h3>
+                </div>
+              </a>
+            </li>
+          </ul>
+      </section>
+        <section class="view-animate-container">
+          <div ng-view class="view-animate"></div>
+        </section>
       </main><!--end .container-->
+
         <!-- bower:js -->
         <script src="../bower_components/jquery/dist/jquery.js"></script>
         <script src="../bower_components/angular/angular.js"></script>
@@ -36,14 +57,13 @@
         <!-- endbower -->
         <script src="js/bootstrap.min.js"></script>
         <script src="js/plugins.js"></script>
-        <script src="js/angular-google-maps.min.js"></script>
-        <script src="js/angular-simple-logger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-animate.min.js"></script>
         <script src="js/main.js"></script>
         <script src="js/login.js"></script>
-        <script src="js/join.js"></script>
         <script src="js/event_list.js"></script>
         <script src="js/create_event.js"></script>
         <script src="js/event_detail.js"></script>
+
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
