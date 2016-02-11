@@ -1,23 +1,18 @@
-<section class="col-md-offset-4 col-md-4" ng-controller="createEventCtrl">
+<section class="create-event-container" ng-controller="createEventCtrl">
+  <a href="#/">
+    <i class="fa fa-times"></i>
+  </a>
+  <h2>Create Event</h2>
   <form ng-submit="createEvent()">
-    <h2>Create Event</h2>
-    <div class="form-group">
+    <div class="form-group col-md-6">
       <input class="form-control" type="text" placeholder="Event Name" ng-model="event_name"></input><!--required-->
       <input class="form-control" type="text" placeholder="Host Church"></input><!--required-->
       <!-- Host Church should be prepopulated dropdown menu of registered churches -->
       <input class="form-control" type="text" placeholder="Contact Person"></input><!--Creator by default-->
       <input class="form-control" type="tel" placeholder="phone number"></input><!--Creator by default-->
-      <input class="form-control" type="Date" placeholder="Start Date"></input><!--required-->
-      <input class="form-control" type="Date" placeholder="End Date"></input>
-      <input class="form-control" type="Time" placeholder="Start Time" ></input><!--required-->
-      <input class="form-control" type="Time" placeholder="End Time"></input>
       <input class="form-control" type="address" placeholder="Location"></input><!--required-->
-<!-- Use Google Maps eventually for Location  -->
-    </div>
-    <div class="form-group">
-      <legend>Event Details</legend>
       <textarea class="form-control" type="text" placeholder="Description"></textarea>
-     <div class="checkbox">
+      <div class="checkbox">
         <label>
           <input type="checkbox" ng-model="meal"> Fellowship Meal
         </label>
@@ -40,9 +35,19 @@
           <input type="checkbox" ng-model="mission"> Mission Activity
         </label>
         <label>
-          <input type="checkbox" ng-model="resource"> Needed Resources
+          <input type="checkbox" ng-model="resource"> Needed Items
         </label>
       </div>
+    </div>
+    <div class="form-group col-md-6">
+      <label>Start Date</label>
+      <input class="form-control" type="Date" placeholder="Start Date"></input><!--required-->
+      <label>End Date</label>
+      <input class="form-control" type="Date" placeholder="End Date"></input>
+      <label>Start Time</label>
+      <input class="form-control" type="Time" placeholder="Start Time"></input><!--required-->
+      <label>End Time</label>
+      <input class="form-control" type="Time" placeholder="End Time"></input>
       <label> Cost</label>
       <input class="form-control" type="number" placeholder="$0.00" ng-model="cost"></input>
       <div class="radio">
@@ -52,6 +57,6 @@
         </label>
       </div>
     </div>
-    <button class="btn btn-default" ng-submit="createEvent()">Submit</button>
+    <a href ng-submit="createEvent()">Submit</a>
   </form>
 </section><!--END createNewEventCtrl-->

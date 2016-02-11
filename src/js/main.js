@@ -1,10 +1,10 @@
 ;(function(){
-  angular.module('flockTogether', ['ngRoute'], function($routeProvider, $httpProvider) {
+  angular.module('flockTogether', ['ngRoute', 'ngAnimate'], function($routeProvider) {
       $routeProvider
-      .when('/', {
-        templateUrl: 'partials/public_event_list.html',
-        controller: 'publicListCtrl'
-      })//END .when '/home'
+      // .when('/', {
+      //   templateUrl: 'partials/event_list.html',
+      //   controller: 'eventListCtrl'
+      // })//END .when '/home'
       .when('/login', {
         templateUrl: 'partials/login.html',
         controller: 'loginCtrl'

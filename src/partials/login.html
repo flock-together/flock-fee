@@ -1,37 +1,49 @@
 <section class="login-page">
+  <a href="#/">
+    <i class="fa fa-times"></i>
+  </a>
+  <section class="form col-md-offset-2 col-md-8 login-form active">
+    <form class="login-form" ng-submit="loginUser()">
+      <legend>Login</legend>
+      <input class="form-control" type="text" placeholder="username" ng-model="username" required></input>
+      <input class="form-control" type="password" placeholder="password" required></input>
+      <br/>
+      <a href ng-click="joinAdmin()">Submit</a>
+    </form>
+      <a href="#/login" class="signup-form-participant">Particpant Signup</a>
+      <a href="#/login" class="signup-form-admin">Admin Signup</a>
+  </section>
 
- <h1>Login</h1>
+  <section class="form col-md-offset-2 col-md-8 signup-form-participant">
+    <form class="form-group" ng-submit="participantSignup()">
+      <legend>Particpant Signup</legend>
+      <input type="text" class="form-control" placeholder="first name" required></input>
+      <input type="text" class="form-control" placeholder="last name" required></input>
+      <input type="email" class="form-control" placeholder="email" required></input>
+      <input type="tel" class="form-control" placeholder="phone number"></input>
+      <input type="password" class="form-control" placeholder="password" min="5" required></input>
+      <input type="password" class="form-control" placeholder="confirm password" min="5" required></input>
+      <input type="text" class="form-control" placeholder="Church Affiliation" ></input>
+      <br/>
+      <a href ng-click="joinParticipant()">Submit</a>
+    </form>
+      <a href="#/login" class="login-form">Login</a>
+      <a href="#/login" class="signup-form-admin">Admin Signup</a>
+  </section><!--END .signup-form-participant-->
 
-<section class="signup-form-admin">
-  <form class="form-group  col-md-3 col-md-offset-2" ng-submit="adminSignup()">
-    <legend>Admin Signup</legend>
-    <input class="form-control" type="text" placeholder="first name" ng-model="name_first" required></input>
-    <input class="form-control" type="text" placeholder="last name" required></input>
-    <input class="form-control" type="email" placeholder="email" required></input>
-    <input class="form-control" type="tel" placeholder="phone number" required></input>
-    <input class="form-control" type="password" placeholder="password" min="5"
- required></input>
-    <input class="form-control" type="password" placeholder="confirm password" min="5" required></input>
-    <input class="form-control" type="text" placeholder="Host Church" required></input>
-    <input class="form-control" type="email" placeholder="Church email" required></input>
-    <input class="form-control" type="tel" placeholder="Church phone" required></input>
-    <input class="form-control" type="url" placeholder="Church website"></input>
-    <button class="btn btn-default">Submit</button>
-  </form>
-</section><!--END .signup-form-admin-->
-
-<section class="signup-form-participant">
-  <form class="form-group col-md-3 col-md-offset-2" ng-submit="participantSignup()">
-    <legend>Particpant Signup</legend>
-    <input type="text" class="form-control" placeholder="first name" required></input>
-    <input type="text" class="form-control" placeholder="last name" required></input>
-    <input type="email" class="form-control" placeholder="email" required></input>
-    <input type="tel" class="form-control" placeholder="phone number"></input>
-    <input type="password" class="form-control" placeholder="password" min="5" required></input>
-    <input type="password" class="form-control" placeholder="confirm password" min="5" required></input>
-    <input type="text" class="form-control" placeholder="Church Affiliation" ></input>
-    <button class="btn btn-default">Submit</button>
-  </form>
-</section><!--END .signup-form-participant-->
-
+  <section class="form col-md-offset-2 col-md-8 signup-form-admin">
+    <form class="form-group" ng-submit="adminSignup()">
+      <legend>Admin Signup</legend>
+      <input class="form-control" type="text" placeholder="username" ng-model="username" required></input>
+      <input class="form-control" type="password" placeholder="password" min="5" required></input>
+      <input class="form-control" type="text" placeholder="Host Church" required></input>
+      <input class="form-control" type="email" placeholder="Church email" required></input>
+      <input class="form-control" type="tel" placeholder="Church phone" required></input>
+      <input class="form-control" type="url" placeholder="Church website"></input>
+      <br/>
+      <a href ng-click="joinAdmin()">Submit</a>
+    </form>
+      <a href="#/login" class="login-form">Login</a>
+      <a href="#/login" class="signup-form-participant">Particpant Signup</a>
+  </section><!--END .signup-form-admin-->
 </section>

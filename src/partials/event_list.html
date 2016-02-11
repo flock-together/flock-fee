@@ -1,0 +1,36 @@
+<section class="event-container">
+  <h2>Event List</h2>
+  <div class="event-list-container">
+    <ul>
+      <li class="event-item" id="event-item-{{event.event_id}}" ng-repeat="event in events | orderBy:'start_date'">
+        <a href="#/event-detail/{{event.event_id}}">
+          <div class="event-item-date">
+            <h3>{{event.start_date}}<span ng-hide="event.end_date === event.start_date"> __ {{event.end_date}}</span></h3>
+          </div>
+          <div class="event-item-name">
+            <h3>{{event.event_name}}</h3>
+          </div>
+          <div class="event-item-type"
+            <p><b>Event Type</b> <span ng-repeat="event_type in event.event_type"> - {{event_type}}</span></p>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+
+
+<!-- <div class="event-rsvp">
+  <h4>RSVP List</h4>
+  <div class="underline">
+  <span ng-repeat="attending in event.attending">{{attending}} &nbsp; &nbsp;  &nbsp; &nbsp;</span>
+  </div>
+</div>
+<div  class="event-similar">
+  <h4>Similar Events</h4>
+  <div class="underline">
+  <span ng-repeat="event in events | limitTo:8" ng-if="event.event_id!=event.event_id"> <a href="#/event-detail/{{event.event_id}}" >{{event.event_name}}</a><br/></span>
+  </div>
+</div> -->

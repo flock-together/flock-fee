@@ -1,0 +1,38 @@
+.create-event-container {
+  h2 {
+    line-height: normal;
+    margin-bottom: 1.5ex;
+  }
+  form > a[href] {
+    box-sizing: border-box;
+    width: 100% * (1/3);
+    margin: 1ex 100% * (1/3);
+    padding: 0 1em;
+    padding-top: 1ex;
+    padding-bottom: 1ex;
+    float: left;
+    font-size: 1em;
+    color:#000;
+    border: 2.3px solid #000;
+    border-radius: 0;
+    background-color: #fff;
+    text-decoration: none;
+    text-align: center;
+  }
+  div.checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+    label {
+    width: 50%;
+    line-height: normal;
+    margin-top: 0;
+    }
+  }
+  .form-group {
+    label {
+      line-height: 0;
+      margin-top: 0.5;
+    }
+  }
+}

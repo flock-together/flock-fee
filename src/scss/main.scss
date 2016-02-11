@@ -95,15 +95,18 @@ textarea {
    Author's custom styles
    ========================================================================== */
 $sky: #0384FC;
-$cloud: #e7e7e7;
+$cloud: #ffffff;
+$stormy: darken($cloud, 20%);
+
 body {
-  background-color: $sky;
-  color: $cloud;
-  font-family: 'Ubuntu', sans-serif;
+  background-color: $cloud;
+  font-family: 'Lato', sans-serif;
+  padding-top: 25ex;
+  text-decoration: none;
   main.container {
     box-sizing: border-box;
-    margin: 10ex auto;
     width: 100%;
+    margin: 0 auto;
   } //main.container
 }
 
@@ -113,12 +116,15 @@ body {
 
 @import "layout";
 @import "event-list";
-@import "join";
-
-
-
-
-
+@import "login";
+@import "event-detail";
+@import "create-event";
+    .fa-times {
+      color: #000;
+      font-size: 5ex;
+      float: right;
+      font-weight: 100;
+    }
 
 
 

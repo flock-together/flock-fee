@@ -1,33 +1,30 @@
-<section>
-  <h2> {{thisEvent.event_name}} <a href ng-click="joinEvent()">Join Event</button></a></h2>
-<div class="col-xs-12">
-  <span>{{thisEvent.start_date}}<span ng-show="event.end_date!==event.start_date">-{{thisEvent.end_date}}</span></span>
-  from
-  <span>{{thisEvent.start_time}}</span>
-  <span> - {{thisEvent.end_time}}</span>
-<br/>
-  <span> <a target="_blank" href="https://www.google.com/maps/place/{{directions}}">{{thisEvent.location}}</a> &nbsp; &nbsp;  <a target="_blank" href="https://www.google.com/maps/place/{{directions}}">View Map</a></span>
-  <p>{{thisEvent.description}}</p>
-</div>
-<div class="col-md-4 col-sm-12">
-  <h2>Details</h2>
-  <h4> Hosted by {{thisEvent.host_church}}</h4>
-  <h4>Event Type</h4>
-  <span ng-repeat="event_type in thisEvent.event_type">{{event_type}}<br/></span>
-<h4>Cost</h4>
-  <span>{{thisEvent.cost | currency}} <span ng-show="thisEvent.suggested"> (Suggested Donation)</span></span>
-  <h4>Contact Person</h4>
 
-  <span><a href="mailto:{{thisEvent.email}}"><i class="fa fa-envelope"></i> <span> {{thisEvent.contact_person}}</span></a></span>
-<br/>
-  <span><a href="tel:{{thisEvent.phone_number}}"><i class="fa fa-phone"></i>  {{thisEvent.phone_number}}</a></span>
-</div>
-<div class="col-md-4 col-sm-6">
-  <h4>RSVP List</h4>
-  <span ng-repeat="attending in thisEvent.attending">{{attending}}<br/></span>
-</div>
-<div  class="col-md-4 col-sm-6">
-  <h4>Similar Events</h4>
-  <h6 ng-repeat="event in events | limitTo:8" ng-if="event.event_id!=thisEvent.event_id"><a href="#/event-detail/{{event.event_id}}">{{event.event_name}}</a></h6>
-</div>
+<section class="event-detail">
+  <a href="#/">
+    <i class="fa fa-times"></i>
+  </a>
+  <h2 class="event-detail--title">{{event.event_name}}</h2>
+  <div class="event-detail--metadata">
+    <a href class="join-btn" ng-click="joinEvent()">Join  Event</button></a>
+    <p class="meta-data event-detail--date">
+      <span>{{event.start_date}}<span ng-hide="event.end_date === event.start_date"> to {{event.end_date}}</span></span>
+    </p>
+    <p class="meta-data event-detail--time">
+      <span>{{event.start_time}}</span>
+      <span> - {{event.end_time}}</span>
+    </p>
+    <p class="meta-data event-detail--location">
+      <a target="_blank" href="https://www.google.com/maps/place/{{directions}}">{{event.location}}</a>
+    </p>
+  </div>
+  <div class="event-detail--description">
+    <p class="description event-detail--description">{{event.description}}</p>
+  </div>
+  <div class="event-detail--specifics clearfix">
+      <p class="event-specifics event-specifics--host">Hosted by:  <span>{{event.host_church}}</span></p>
+      <p class="event-specifics event-specifics--type">Event Type <span ng-repeat="event_type in event.event_type">{{event_type}}<br/></span></p>
+      <p class="event-specifics event-specifics--cost">Cost <span>{{event.cost | currency}} <span ng-show="event.suggested"> (Suggested Donation)</span></span></p>
+      <p class="event-specifics event-specifics--email"><a href="mailto:{{event.email}}"><i class="fa fa-envelope"></i> &nbsp <span> {{event.contact_person}}</span></a></p>
+      <p class="event-specifics event-specifics--phone"><a href="tel:{{event.phone_number}}"><i class="fa fa-phone"></i>&nbsp<span> {{event.phone_number}}</span></a></p>
+  </div>
 </section>
