@@ -8,22 +8,20 @@
   right: 0;
 }
 .view-animate {
-  padding: 3ex 3em;
-  height:150vh;
+  padding: 3ex 3em 100%;
+  @extend .clearfix;
   background-color: $sky;
   border-left: 3px solid #000;
 }
 
 .view-animate.ng-enter, .view-animate.ng-leave {
-  transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) .75s;
-  // display:block;
+  transition:all cubic-bezier(0.25, 0.1, 0.25, 1.0) .75s ;
   width:100%;
   position:absolute;
   top:0;
   left:0;
   right:0;
   bottom:0;
-  // padding:10px;
 }
 
 .view-animate.ng-enter {
@@ -102,9 +100,9 @@
         font-weight: bold;
         padding-bottom: 0.5ex;
         span {
-          font-weight: normal;
+          font-weight: 400;
           line-height: 0;
-       }
+        }
       }//event-specifics--type
       &.event-specifics--cost {
         float: right;

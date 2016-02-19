@@ -1,8 +1,9 @@
 .create-event-container {
-  h2 {
-    line-height: normal;
-    margin-bottom: 1.5ex;
-  }
+  margin-top: 3ex;
+  padding: 2ex 2em;
+  background-color: rgba(255,255,255,0.3);
+  @extend .clearfix;
+
   form > a[href] {
     box-sizing: border-box;
     width: 100% * (1/3);
@@ -19,14 +20,9 @@
     text-decoration: none;
     text-align: center;
   }
-  div.checkbox {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-    label {
-    width: 50%;
-    line-height: normal;
-    margin-top: 0;
+  .dropdown-menu {
+    li {
+      padding-left: 1em;
     }
   }
   .form-group {
