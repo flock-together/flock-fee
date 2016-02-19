@@ -1,6 +1,6 @@
 <section class="login-page">
   <a href="#/">
-    <i class="fa fa-times"></i>
+    <i class="fa fa-times-circle"></i>
   </a>
   <section class="form col-md-offset-2 col-md-8 login-form active">
     <form class="login-form" ng-submit="loginUser()">
@@ -8,24 +8,25 @@
       <input class="form-control" type="text" placeholder="username" ng-model="username" required></input>
       <input class="form-control" type="password" placeholder="password" required></input>
       <br/>
-      <a href ng-click="joinAdmin()">Submit</a>
+      <button href="">Submit</button>
     </form>
       <a href="#/login" class="signup-form-participant">Particpant Signup</a>
       <a href="#/login" class="signup-form-admin">Admin Signup</a>
   </section>
 
   <section class="form col-md-offset-2 col-md-8 signup-form-participant">
-    <form class="form-group" ng-submit="participantSignup()">
+    <form class="form-group"  ng-submit="participantSignup()">
       <legend>Particpant Signup</legend>
-      <input type="text" class="form-control" placeholder="first name" required></input>
-      <input type="text" class="form-control" placeholder="last name" required></input>
-      <input type="email" class="form-control" placeholder="email" required></input>
-      <input type="tel" class="form-control" placeholder="phone number"></input>
-      <input type="password" class="form-control" placeholder="password" min="5" required></input>
+      <input type="text" class="form-control" placeholder="first name" ng-model="participants.first_name" required></input>
+      <input type="text" class="form-control" placeholder="last name" ng-model="participants.last_name"  required></input>
+      <input type="text" class="form-control" placeholder="username" ng-model="participants.username"  required></input>
+      <input type="email" class="form-control" placeholder="email" ng-model="participants.email" required></input>
+      <input type="tel" class="form-control" placeholder="phone number"  ng-model="participants.phone_number"></input>
+      <input type="password" class="form-control" placeholder="password" min="5"  ng-model="participants.password"required></input>
       <input type="password" class="form-control" placeholder="confirm password" min="5" required></input>
-      <input type="text" class="form-control" placeholder="Church Affiliation" ></input>
+      <input type="text" class="form-control" placeholder="Church Affiliation"  ng-model="participants.church"></input>
       <br/>
-      <a href ng-click="joinParticipant()">Submit</a>
+      <button href="" class="button">Submit</button>
     </form>
       <a href="#/login" class="login-form">Login</a>
       <a href="#/login" class="signup-form-admin">Admin Signup</a>
@@ -41,7 +42,7 @@
       <input class="form-control" type="tel" placeholder="Church phone" required></input>
       <input class="form-control" type="url" placeholder="Church website"></input>
       <br/>
-      <a href ng-click="joinAdmin()">Submit</a>
+      <button href="">Submit</button>
     </form>
       <a href="#/login" class="login-form">Login</a>
       <a href="#/login" class="signup-form-participant">Particpant Signup</a>
