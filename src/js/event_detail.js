@@ -11,11 +11,7 @@
       $scope.directions = $scope.event.location.split(" ").join("+");
     });//END get event.json
 
-    $scope.showDetails = function(){
-
-    };
-
-    $scope.joinEvent=function(){
+    $scope.joinEvent = function(){
       console.log("Add code to put user to attending list");
       $http.get("https://flockapi.herokuapp.com/")
       .then(function successCallback(response) {
