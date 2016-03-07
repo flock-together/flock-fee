@@ -4,7 +4,7 @@
   height: 100vh;
   top: 35%;
   transform: scale(1.75);
-  div {
+  .modal-box {
     box-sizing: border-box;
     width: 60%;
     height: 100vh;
@@ -12,10 +12,16 @@
     opacity: 1;
     padding: 10ex 2em;
     text-align: center;
+    background: url(../img/sheep.jpg) top center no-repeat;
     background-color: rgba(3, 132, 252, 1);
-    p {
-      width: 50%;
-      margin-left: 25%;
+    .text-box {
+      background-color: rgba(255, 255, 255, 0.5);
+      width: 100% * (3/4);
+      margin-left: 100% * (1/8);
+      p {
+        width: 50%;
+        margin-left: 25%;
+      }
     }
     button {
       box-sizing: border-box;
@@ -33,22 +39,18 @@
     }
   }
   &.inactive {
-    // height: 0;
-    // width: 0;
-    // left: 0;
-    // top: 0;
     margin: 0;
     opacity: 0;
     pointer-events: none;
   }
 }
 
-.openerror {
+.open {
   background-color: rgba(3, 132, 252, 1);
   -webkit-filter: blur(5px) grayscale(50%);
   -webkit-transform: scale(0.9);
 }
 
-.welcome-modal, .wrapper{
+.open, .wrapper{
   transition: all 0.5s ease;
 }
