@@ -1,5 +1,18 @@
 @media (min-width: 60rem) {
   body {
     background-color: yellow;
+  .welcome-modal {
+    .modal-box {
+      padding: 15ex 15% 0;
+      .text-box {
+        width: 100% * (1/2);
+        margin: 0 100% * (1/4);
+      }//.text-box
+      button {
+        width: 100%*(1/4);
+        margin: 1.5ex 100%*(1/8) 3ex;
+      }
+    }//.modal-box
+  }//.welcome-modal
   }//body
 }//@media 50rem
