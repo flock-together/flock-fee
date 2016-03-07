@@ -17,7 +17,7 @@
     "attending": ["Shay", "Cathy", "Ayden", "Ellie", "Jerry", "Larry", "Barry", "Mary"]
   },
 { "event_name": "Second Event!",
-    "event_id": 1,
+    "event_id": 2,
     "host_church": "Church UMC",
     "contact_person": "Shay",
     "phone_number": "919-928-4495",
@@ -35,7 +35,7 @@
   },
   {
     "event_name": "Another Event!",
-    "event_id": 2,
+    "event_id": 3,
     "host_church": "Jesus Church",
     "contact_person": "Shay Hall",
     "phone_number": "919-928-4495",
@@ -52,24 +52,6 @@
     "attending": ["Shay", "Cathy", "Ayden", "Ellie"]
   },
   {
-    "event_name": "Yet Another Event!",
-    "event_id": 3,
-    "host_church": "Churchy Church",
-    "contact_person": "Mr. Hall",
-    "phone_number": "919-928-4495",
-    "email": "shayhall@nccumc.org",
-    "start_date": "3-26-16",
-    "end_date": "3-26-16",
-    "start_time": "12:30 pm",
-    "end_time": "1:00 pm",
-    "location": "204 Baccalaureate Blvd. Durham, NC 27713",
-    "description": "a commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "event_type": ["youth"],
-    "suggested": false,
-    "cost": "5.00",
-    "attending": ["Shay", "Cathy", "Ayden", "Ellie"]
-  },
-  {
     "event_name": "4th Event",
     "event_id": 4,
     "host_church": "Churchy Church",
@@ -143,7 +125,7 @@
   },
   {
     "event_name": "Yet Another Event!",
-    "event_id": 3,
+    "event_id": 8,
     "host_church": "Churchy Church",
     "contact_person": "Mr. Hall",
     "phone_number": "919-928-4495",
@@ -161,7 +143,7 @@
   },
   {
     "event_name": "4th Event",
-    "event_id": 4,
+    "event_id": 9,
     "host_church": "Churchy Church",
     "contact_person": "Mr. Hall",
     "phone_number": "919-928-4495",
@@ -177,9 +159,27 @@
     "cost": "5.00",
     "attending": ["Shay", "Cathy", "Ayden", "Ellie"]
     },
+    {
+      "event_name": "Yet Another Event!",
+      "event_id": 10,
+      "host_church": "Churchy Church",
+      "contact_person": "Mr. Hall",
+      "phone_number": "919-928-4495",
+      "email": "shayhall@nccumc.org",
+      "start_date": "3-26-16",
+      "end_date": "3-26-16",
+      "start_time": "12:30 pm",
+      "end_time": "1:00 pm",
+      "location": "204 Baccalaureate Blvd. Durham, NC 27713",
+      "description": "a commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "event_type": ["youth"],
+      "suggested": false,
+      "cost": "5.00",
+      "attending": ["Shay", "Cathy", "Ayden", "Ellie"]
+    },
   {
-    "event_name": "Event 5!",
-    "event_id": 5,
+    "event_name": "Event 11!",
+    "event_id": 11,
     "host_church": "Churchy Church",
     "contact_person": "Mr. Hall",
     "phone_number": "919-928-4495",
@@ -196,8 +196,8 @@
     "attending": ["Shay", "Cathy", "Ayden", "Ellie"]
   },
   {
-    "event_name": "Event six!",
-    "event_id": 6,
+    "event_name": "Event 12!",
+    "event_id": 12,
     "host_church": "Churchy Church",
     "contact_person": "Mr. Hall",
     "phone_number": "919-928-4495",
@@ -214,8 +214,8 @@
     "attending": ["Shay", "Cathy", "Ayden", "Ellie"]
   },
   {
-    "event_name": "Seventh Event!",
-    "event_id": 7,
+    "event_name": "Thirteenth Event!",
+    "event_id": 13,
     "host_church": "Churchy Church",
     "contact_person": "Mr. Hall",
     "phone_number": "919-928-4495",
