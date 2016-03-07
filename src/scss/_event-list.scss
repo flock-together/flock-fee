@@ -13,7 +13,10 @@
       list-style: none;
       border-bottom: 2px solid black;
       padding: 2ex 0 2ex 5%;
-       &.event-item-heading {
+      &:hover {
+        background-color: rgba(3, 132, 252, 0.6);
+      }
+        &.event-item-heading {
           position: fixed;
           top: 12ex;
           background: $sky;
@@ -23,20 +26,17 @@
           width: 100%*(1/4);
           float: left;
         }
-        .event-item-heading-list {
-          box-sizing: border-box;
-          display: block;
-          width: 100%*(1/4);
-          float: left;
-          text-align: left;
+          .event-item-heading-list {
+            box-sizing: border-box;
+            display: block;
+            width: 100%*(1/4);
+            float: left;
+            text-align: left;
+          }
         }
-      }
       a[href] {
         color: #000;
         &:focus {
-          color: $sky;
-        }
-        &:hover {
           color: $sky;
         }
         .event-item {
@@ -53,7 +53,7 @@
           }//event-item-name
           &-type {
             box-sizing: border-box;
-            width: 100%*(1/4);
+            width: 100%*(2/4);
             float: left;
           }//event-item-type
         }//event-item...

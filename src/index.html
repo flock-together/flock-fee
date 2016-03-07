@@ -22,24 +22,37 @@
           <ul>
             <li><a href="#/create-event">Add Event</a></li>
             <li><a href="#/login">Sign In</a></li>
+            <li>
+              <select class="form-control" placeholder="Search" ng-model="filter">
+                <option value=""> Event Type</option>
+                <option value="meal"> Fellowship Meal</option>
+                <option value="worship"> Worship Service</option>
+                <option value="small_group"> Small Group</option>
+                <option value="youth"> Youth Ministry</option>
+                <option value="children"> Children Ministry</option>
+                <option value="fundraiser"> Fundraiser</option>
+              </select>
             </li>
           </ul>
         </nav>
       </header>
-      <main>
+      <main class="wrapper">
         <section class="event-list-container">
           <ul>
             <li class="event-item event-item-heading">
               <h2 class="event-item-heading-date">Date</h2>
               <h2 class="event-item-heading-list">Event List</h2>
             </li>
-            <li class="event-item" id="event-item-{{event.event_id}}" ng-repeat="event in events | orderBy:'start_date'">
+            <li class="event-item" id="event-item-{{event.event_id}}" ng-repeat="event in events | orderBy:'start_date' | filter:filter">
               <a href="#/event-detail/{{event.event_id}}" ng-click="showDetails()">
                 <div class="event-item-date">
-                  <h3>{{event.start_date}}<span ng-hide="event.end_date === event.start_date"> __ {{event.end_date}}</span></h3>
+                  <h3>{{event.start_date}}<span ng-hide="event.end_date === event.start_date"> to {{event.end_date}}</span></h3>
                 </div>
                 <div class="event-item-name">
                   <h3>{{event.event_name}}</h3>
+                </div>
+                <div class="event-item-type">
+                  <h3> <span ng-repeat="event_type in event.event_type | limitTo: 4"> • {{event_type}}</span></h3>
                 </div>
               </a>
             </li>
@@ -49,7 +62,16 @@
           <div ng-view class="view-animate"></div>
         </section>
       </main><!--end .container-->
-
+<section class="welcome-modal">
+  <div class="modal-box">
+    <div class="text-box">
+    <h1>Welcome to Flock.</h1>
+    <h4>Where we're better together.</h4>
+    <p>There's strength in numbers.  Flock is here to help you and your congregation join with other churches in your area to better do what the Church is meant to do.</p>
+    <button class="confirm">OK</button>
+    </div>
+  </div>
+</section>
         <!-- bower:js -->
         <script src="../bower_components/jquery/dist/jquery.js"></script>
         <script src="../bower_components/angular/angular.js"></script>

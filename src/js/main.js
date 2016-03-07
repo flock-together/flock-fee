@@ -1,4 +1,5 @@
 ;(function(){
+
   angular.module('flockTogether', ['ngRoute', 'ngAnimate'], function($routeProvider) {
       $routeProvider
       // .when('/', {
@@ -19,6 +20,20 @@
       })
   })//END angular.module 'flock'
     .controller('MainController', function($http, $scope){
+  $(document).ready(function() {
+    $(".wrapper").addClass("open");
+    $(".welcome-modal").removeClass("inactive");
+    setTimeout(function() {
+      $(".wrapper").removeClass("open");
+      $(".welcome-modal").addClass("inactive");
+    }, 15000);
+  });
+
+  $(".confirm").on("click", function(){
+    $(".wrapper").removeClass("open");
+    $(".welcome-modal").addClass("inactive");
+  });
+
       $http.get('api/event.json')
         .then(function(response){
           $scope.events = response.data;

@@ -2,11 +2,11 @@
   angular.module('flockTogether')
 
     .controller('loginCtrl', function($scope, $http){
-      var BASE_URL = "https://sheltered-reef-84965.herokuapp.com/users/";
-    var delay=1000;
-      setTimeout(function(){
-          $("h1").addClass("current");
-      }, delay);
+      var BASE_URL = "https://sheltered-reef-84965.herokuapp.com/";
+    // var delay=1000;
+    //   setTimeout(function(){
+    //       $("h1").addClass("current");
+    //   }, delay);
       $scope.login = { };
       $scope.loginUser = function() {
         $http.post('BASE_URL', $scope.login)
@@ -31,11 +31,40 @@
           });
       }//adminSignup form
 
-      $scope.participants = { };
+      $scope.participants = {
+        "username": "",
+        "password": "",
+        "email": "",
+        "first_name": "",
+        "last_name": ""
+      };
+
+      var settings = {
+        "async": true,
+        "crossDomain": true,
+        "url": "https://sheltered-reef-84965.herokuapp.com/users/",
+        "method": "POST",
+        "headers": {
+          "content-type": "application/json",
+          "authorization": "Basic Z2xlbm46c3VtaXN1bWk=",
+          "cache-control": "no-cache",
+          "postman-token": "9bb185c0-3dbe-093d-ec05-937e23771e1a"
+        }
+      }
       $scope.participantSignup = function() {
-        $http.post('BASE_URL', $scope.participants)
+        console.log($scope.participants);
+        console.log(settings);
+        console.log("Hello");
+        $http(settings, $scope.participants)
           .success(function(response) {
-            console.log($scope.name_first);
+            console.log($scope.username);
+            $scope.participants = {
+              "username": "",
+              "password": "",
+              "email": "",
+              "first_name": "",
+              "last_name": ""
+            };
           })
           .error(function(response) {
             console.log("Fail!" + response);

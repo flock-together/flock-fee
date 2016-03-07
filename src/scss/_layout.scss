@@ -5,7 +5,7 @@ header.header {
   padding: 1ex 5%;
   background-color: $cloud;
   border-bottom: 2px solid #000;
-  z-index: 99;
+  z-index: 9;
   a[href] {
     color: #000;
     text-decoration: none;
@@ -14,7 +14,7 @@ header.header {
     }
   }
   h1 {
-    width: 10em;
+    width: 2em;
     float: left;
     font-size: 4em;
     line-height: 0;

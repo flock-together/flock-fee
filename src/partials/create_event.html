@@ -1,43 +1,65 @@
 <section class="create-event-container" ng-controller="createEventCtrl">
   <a href="#/">
-    <i class="fa fa-times"></i>
+    <i class="fa fa-times-circle"></i>
   </a>
-  <h2>Create Event</h2>
   <form ng-submit="createEvent()">
+    <legend>Create Event</legend>
     <div class="form-group col-md-6">
       <input class="form-control" type="text" placeholder="Event Name" ng-model="event_name"></input><!--required-->
       <input class="form-control" type="text" placeholder="Host Church"></input><!--required-->
       <!-- Host Church should be prepopulated dropdown menu of registered churches -->
       <input class="form-control" type="text" placeholder="Contact Person"></input><!--Creator by default-->
       <input class="form-control" type="tel" placeholder="phone number"></input><!--Creator by default-->
-      <input class="form-control" type="address" placeholder="Location"></input><!--required-->
-      <textarea class="form-control" type="text" placeholder="Description"></textarea>
-      <div class="checkbox">
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Event Type
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        <li>
         <label>
-          <input type="checkbox" ng-model="meal"> Fellowship Meal
+        <input type="checkbox" ng-model="meal"> Fellowship Meal
         </label>
-        <label>
-          <input type="checkbox" ng-model="small_group"> Small Group
-        </label>
+        </li>
+        <li>
         <label>
           <input type="checkbox" ng-model="worship"> Worship Service
         </label>
+        </li>
+        <li>
+        <label>
+          <input type="checkbox" ng-model="small_group"> Small Group
+        </label>
+        </li>
+        <li>
         <label>
           <input type="checkbox" ng-model="youth"> Youth Ministry
         </label>
+        </li>
+        <li>
         <label>
-          <input type="checkbox" ng-model="children"> Children Ministry
+        <input type="checkbox" ng-model="children"> Children Ministry
         </label>
+        </li>
+        <li>
         <label>
           <input type="checkbox" ng-model="fundraiser"> Fundraiser
         </label>
+        </li>
+        <li>
         <label>
-          <input type="checkbox" ng-model="mission"> Mission Activity
+        <input type="checkbox" ng-model="mission"> Mission Activity
         </label>
+        </li>
+        <li>
         <label>
-          <input type="checkbox" ng-model="resource"> Needed Items
+        <input type="checkbox" ng-model="resource"> Needed Items
         </label>
+        </li>
+        </ul>
       </div>
+      <input class="form-control" type="address" placeholder="Location"></input><!--required-->
+      <textarea class="form-control" type="text" placeholder="Description"></textarea>
     </div>
     <div class="form-group col-md-6">
       <label>Start Date</label>
