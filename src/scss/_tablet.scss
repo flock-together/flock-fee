@@ -1,5 +1,32 @@
 @media (min-width: 40rem) {
   body {
-    background-color: teal;
-  }
-}
+    background-color: red;
+    header.header {
+        padding: 1ex 5%;
+      h1 {
+        width: 2em;
+        float: left;//CHANGED
+        font-size: 4em;
+        text-align: left;
+      }
+      nav {
+        float: right;//CHANGED
+        ul {
+          li {
+            width: auto;
+            float: right;
+            font-size: 1.5em;
+            text-align: right;
+            margin: 2.5ex 1em -1ex;//CHANGED
+            &:last-of-type {
+              width: auto;
+              float: right;//CHANGED
+              padding-bottom: 0;
+            }
+          }//li
+        }//ul
+      }//nav
+    }//.header
+
+  }//body
+}//@media 40rem

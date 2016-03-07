@@ -1,37 +1,42 @@
-header.header {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  padding: 1ex 5%;
-  background-color: $cloud;
-  border-bottom: 2px solid #000;
-  z-index: 9;
-  a[href] {
-    color: #000;
-    text-decoration: none;
-    &:hover {
-      color: $sky;
+body {
+  header.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 1ex 0;//CHANGED
+    background-color: $cloud;
+    border-bottom: 2px solid #000;
+    z-index: 9;
+    a[href] {
+      color: #000;
+      text-decoration: none;
+      &:hover {
+        color: $sky;
+      }
     }
-  }
-  h1 {
-    width: 2em;
-    float: left;
-    font-size: 4em;
-    line-height: 0;
-  }
-  nav {
-    float: right;
-    ul {
-      padding: 0;
-      li {
-        list-style: none;
-        display: block;
-        float: right;
-        font-size: 1.5em;
-        padding: 1ex 0 1ex 1em;
-        margin: 1ex 1em;
-        text-align: right;
-      }//li
-    }//ul
-  }//nav
-}//.header
+    h1 {
+      font-size: 3em;//CHANGED
+      line-height: 0;
+      text-align: center;//CHANGED
+    }
+    nav {
+      ul {
+        padding: 0;
+        margin: 0;
+        li {
+          width: 100% * (1/4);//CHANGED
+          float: left;//CHANGED
+          font-size: 1em;//CHANGED
+          text-align: center;//CHANGED
+          display: block;
+          list-style: none;
+          padding: 1ex 0 0;
+          &:last-of-type {
+            width: 100% * (1/2);//CHANGED
+            padding-top: 0;
+          }
+        }//li
+      }//ul
+    }//nav
+  }//.header
+}//body
