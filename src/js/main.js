@@ -21,16 +21,16 @@
   })//END angular.module 'flock'
     .controller('MainController', function($http, $scope){
   $(document).ready(function() {
-    $(".wrapper").addClass("open");
+    $(".wrapper").addClass("open-modal");
     $(".welcome-modal").removeClass("inactive");
     setTimeout(function() {
-      $(".wrapper").removeClass("open");
+      $(".wrapper").removeClass("open-modal");
       $(".welcome-modal").addClass("inactive");
     }, 15000);
   });
 
   $(".confirm").on("click", function(){
-    $(".wrapper").removeClass("open");
+    $(".wrapper").removeClass("open-modal");
     $(".welcome-modal").addClass("inactive");
   });
 

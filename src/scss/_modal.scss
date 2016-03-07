@@ -45,12 +45,12 @@
   }
 }
 
-.open {
+.open-modal {
   background-color: rgba(3, 132, 252, 1);
   -webkit-filter: blur(5px) grayscale(50%);
   -webkit-transform: scale(0.9);
 }
 
-.open, .wrapper{
+.open-modal, .wrapper{
   transition: all 0.5s ease;
 }
