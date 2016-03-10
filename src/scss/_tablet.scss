@@ -123,5 +123,17 @@
     }//event-detail--specifics
   }//event-detail
 
+.create-event-container {
+  margin-top: -1em;//CHANGED
+  margin-right: -2em;//CHANGED
+  padding: 3ex 25%;//CHANGED
+  form {
+    a[href] {
+      width: 100% * (1/4);//CHANGED
+      margin: 1ex 100% * (3/8);//CHANGED
+    }
+  }//form
+}//.create-event-container
+
   }//body
 }//@media 40rem
