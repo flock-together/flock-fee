@@ -1,56 +1,65 @@
-.welcome-modal {
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  top: 35%;
-  transform: scale(1.75);
-  .modal-box {
-    box-sizing: border-box;
-    width: 60%;
+body {
+  .welcome-modal {
+    position: fixed;
+    width: 100%;
     height: 100vh;
-    margin: 5ex 20%;
-    opacity: 1;
-    padding: 10ex 2em;
-    text-align: center;
-    background: url(../img/sheep.jpg) top center no-repeat;
-    background-color: rgba(3, 132, 252, 1);
-    .text-box {
-      background-color: rgba(255, 255, 255, 0.5);
-      width: 100% * (3/4);
-      margin-left: 100% * (1/8);
-      p {
-        width: 50%;
-        margin-left: 25%;
+    top: 10ex;//CHANGED
+    transform: scale(1.75);
+    .modal-box {
+      box-sizing: border-box;
+      width: 100%;
+      height: 100vh;
+      margin: 11ex 0;//CHANGED
+      opacity: 1;
+      padding: 0 2em;//CHANGED
+      text-align: center;
+      background: url(../img/sheep.jpg) top center no-repeat;
+      background-color: rgba(3, 132, 252, 1);
+      .text-box {
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 100% * (3/4);//CHANGED
+        margin-left: 100% * (1/8);//CHANGED
+        padding: 6ex 2em;//CHANGED
+        h1 {
+          margin-bottom: 0.5ex;//CHANGED
+          font-size: 1.25em;//CHANGED
+        }
+        h4 {
+          margin-top: 0;
+          font-size: 1em;//CHANGED
+        }
+        p {
+          font-size: 0.75em;//CHANGED
+        }
+      }
+      button {
+        box-sizing: border-box;
+        width: 100%*(2/3);//CHANGED
+        margin: 0 100%*(1/6);//CHANGED
+        padding: 0.5ex 1em;
+        font-size: 0.9em;//CHANGED
+        color: #000;
+        border: 2px solid #000;
+        border-radius: 0;
+        background-color: #fff;
+        text-decoration: none;
+        text-align: center;
       }
     }
-    button {
-      box-sizing: border-box;
-      width: 100%*(1/5);
-      margin: 3ex 100%*(2/5);
-      padding: 0.5ex 1em;
-      float: left;
-      font-size: 1em;
-      color: #000;
-      border: 2px solid #000;
-      border-radius: 0;
-      background-color: #fff;
-      text-decoration: none;
-      text-align: center;
+    &.inactive {
+      margin: 0;
+      opacity: 0;
+      pointer-events: none;
     }
   }
-  &.inactive {
-    margin: 0;
-    opacity: 0;
-    pointer-events: none;
+
+  .open-modal {
+    background-color: rgba(3, 132, 252, 1);
+    -webkit-filter: blur(5px) grayscale(50%);
+    -webkit-transform: scale(0.9);
   }
-}
 
-.open {
-  background-color: rgba(3, 132, 252, 1);
-  -webkit-filter: blur(5px) grayscale(50%);
-  -webkit-transform: scale(0.9);
-}
-
-.open, .wrapper{
-  transition: all 0.5s ease;
-}
+  .open-modal, .wrapper{
+    transition: all 0.5s ease;
+  }
+}//body

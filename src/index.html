@@ -44,7 +44,7 @@
               <h2 class="event-item-heading-list">Event List</h2>
             </li>
             <li class="event-item" id="event-item-{{event.event_id}}" ng-repeat="event in events | orderBy:'start_date' | filter:filter">
-              <a href="#/event-detail/{{event.event_id}}" ng-click="showDetails()">
+              <a href="#/event-detail/{{event.event_id}}">
                 <div class="event-item-date">
                   <h3>{{event.start_date}}<span ng-hide="event.end_date === event.start_date"> to {{event.end_date}}</span></h3>
                 </div>
@@ -59,7 +59,7 @@
           </ul>
       </section>
         <section class="view-animate-container">
-          <div ng-view class="view-animate"></div>
+          <div ng-view class="view-animate clearfix"></div>
         </section>
       </main><!--end .container-->
 <section class="welcome-modal">

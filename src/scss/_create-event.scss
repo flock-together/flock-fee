@@ -1,16 +1,24 @@
+body {
 .create-event-container {
-  margin-top: 3ex;
-  padding: 2ex 2em;
+  box-sizing: border-box;
+  width: 100vw;
+  margin-top: 3ex;//CHANGED
+  margin-right: 1em;//CHANGED
+  padding: 2ex 2em;//CHANGED
   background-color: rgba(255,255,255,0.3);
-  @extend .clearfix;
-
-  form > a[href] {
+a[href] i {
+  margin-bottom: -1.5ex;
+  margin-right: 0.5em;//CHANGED
+}
+  form {
+    legend {
+      padding-left: 0.9em;//CHANGED
+    }
+    a[href] {
     box-sizing: border-box;
-    width: 100% * (1/3);
-    margin: 1ex 100% * (1/3);
-    padding: 0 1em;
-    padding-top: 1ex;
-    padding-bottom: 1ex;
+    width: 100% * (1/3);//CHANGED
+    margin: 1ex 100% * (1/3);//CHANGED
+    padding: 1ex 0;//CHANGED
     float: left;
     font-size: 1em;
     color:#000;
@@ -20,6 +28,7 @@
     text-decoration: none;
     text-align: center;
   }
+}//form
   .dropdown-menu {
     li {
       padding-left: 1em;
@@ -31,4 +40,5 @@
       margin-top: 0.5;
     }
   }
-}
+}//.create-event-container
+}//body

@@ -5,17 +5,16 @@
   </a>
   <h2 class="event-detail--title">{{event.event_name}}</h2>
   <div class="event-detail--metadata">
-    <a href class="join-btn" ng-click="joinEvent()">Join  Event</button></a>
-    <p class="meta-data event-detail--date">
-      <span>{{event.start_date}}<span ng-hide="event.end_date === event.start_date"> to {{event.end_date}}</span></span>
-    </p>
-    <p class="meta-data event-detail--time">
+    <p class="meta-data event-detail--date event-detail--time">
+      <span>{{event.start_date}}<span ng-hide="event.end_date === event.start_date"> to {{event.end_date}}</span></span> &nbsp &nbsp
       <span>{{event.start_time}}</span>
       <span> - {{event.end_time}}</span>
     </p>
+  <a href class="join-btn" ng-click="joinEvent()">Join  Event</button></a>
     <p class="meta-data event-detail--location">
       <a target="_blank" href="https://www.google.com/maps/place/{{directions}}">{{event.location}}</a>
     </p>
+
   </div>
   <div class="event-detail--description">
     <p class="description event-detail--description">{{event.description}}</p>

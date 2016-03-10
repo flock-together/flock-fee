@@ -1,63 +1,75 @@
-.event-list-container {
-  box-sizing: border-box;
-  display: block;
-  float: left;
-  width: 100%;
-  ul {
+body {
+  .event-list-container {
+    box-sizing: border-box;
+    display: block;
+    float: left;
     width: 100%;
-    padding-left: 0;
-    .event-item {
-      box-sizing: border-box;
+    ul {
       width: 100%;
-      float: left;
-      list-style: none;
-      border-bottom: 2px solid black;
-      padding: 2ex 0 2ex 5%;
-      &:hover {
-        background-color: rgba(3, 132, 252, 0.6);
-      }
+      padding-left: 0;
+      .event-item {
+        box-sizing: border-box;
+        width: 100%;
+        float: left;
+        list-style: none;
+        border-bottom: 2px solid black;
+        padding: 0.5ex 0 0.75ex 5%;//CHANGED
+        &:first-of-type {
+          padding: 2ex 0 2ex 5%;
+        }
+        &:hover {
+          background-color: rgba(3, 132, 252, 0.6);
+        }
         &.event-item-heading {
           position: fixed;
-          top: 12ex;
+          top: 13ex;//CHANGED
           background: $sky;
-        .event-item-heading-date {
-          box-sizing: border-box;
-          display: block;
-          width: 100%*(1/4);
-          float: left;
-        }
+          .event-item-heading-date {
+            box-sizing: border-box;
+            display: block;
+            width: 100%*(2/5);//CHANGED
+            float: left;
+            text-align: left;
+            font-size: 1.75em;//CHANGED
+          }
           .event-item-heading-list {
             box-sizing: border-box;
             display: block;
-            width: 100%*(1/4);
+            width: 100%*(3/5);//CHANGED
             float: left;
             text-align: left;
+            font-size: 1.75em;//CHANGED
           }
         }
-      a[href] {
-        color: #000;
-        &:focus {
-          color: $sky;
-        }
-        .event-item {
-          &-date {
-            box-sizing: border-box;
-            display: block;
-            width: 100%*(1/4);
-            float: left;
+        a[href] {
+          color: #000;
+          &:focus {
+            color: $sky;
           }
-          &-name {
-            box-sizing: border-box;
-            width: 100%*(1/4);
-            float: left;
-          }//event-item-name
-          &-type {
-            box-sizing: border-box;
-            width: 100%*(2/4);
-            float: left;
-          }//event-item-type
-        }//event-item...
-      }//a[href]
-    }//event-item
-  }//ul
-}//event-list-container
+          .event-item {
+            &-date {
+              box-sizing: border-box;
+              display: block;
+              width: 100%*(2/5);//CHANGED
+              float: left;
+              padding: 0;
+              margin: 0;//CHANGED
+              span {
+                display: block;//CHANGED desk
+              }
+            }
+            &-name {
+              box-sizing: border-box;
+              width: 100%*(3/5);//CHANGED
+              float: left;
+              margin: 0;
+            }//event-item-name
+            &-type {
+              display: none;//CHANGED
+            }//event-item-type
+          }//event-item...
+        }//a[href]
+      }//event-item
+    }//ul
+  }//event-list-container
+}//body
